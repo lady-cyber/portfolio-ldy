@@ -1,0 +1,953 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Georgia', serif;
+  background-color: #fff9df; /* Ensure the white background is set */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fbfbf0;/* Ensure the container takes the full white background */
+}
+
+/* Transition Layers */
+.transition-layers {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.yellow-bg {
+  background-color: #fbf3d5;/
+  width: 100%;
+  height: 100%;
+  animation: slideInYellow 3s ease forwards, slideUpYellow 1s ease 3s forwards;
+  z-index: 2;
+}
+
+.black-overlay {
+  background-image: url('https://i.pinimg.com/736x/b5/0c/60/b50c60b38ac5766035339283774163b7.jpg');
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  animation: pullDownBlack 3s ease 3s forwards;
+  z-index: 1;
+}
+
+/* Pink Wall */
+.pink-wall {
+  background-color: #fcacbc;
+  position: fixed;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transition: top 0.5s ease-in-out;
+}
+
+/* Main Content */
+#main-content {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  margin-top: 20%;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fcacbc;
+}
+
+h1 span {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Interactive Line */
+.interactive-line {
+  margin-top: 50px;
+  font-size: 1.2rem;
+  color: #d1b890;
+  cursor: pointer;
+  display: inline-block;
+  border-bottom: 2px solid black;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.interactive-line:hover {
+  color: #d1b890;
+  border-color: #fcacbc;
+}
+
+/* Animations */
+@keyframes slideInYellow {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpYellow {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes pullDownBlack {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes exitYellow {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes exitBlack {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+
+
+
+/*FINN Main container to use flexbox for centering */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;  /* Horizontally center */
+  align-items: center;      /* Vertically center */
+  width: 100%;
+  height: 100vh;            /* Full viewport height */
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+
+
+
+/* FINNN Main container to use flexbox for centering */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;  /* Horizontally center */
+  align-items: center;      /* Vertically center */
+  width: 100%;
+  height: 100vh;        
+  background-color: #fbfbf0
+;
+
+  overflow: hidden;
+}
+
+/* FINN Main Content */
+#main-content {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  margin-bottom: 25%; /* Adjust percentage to move it upwards */
+}
+
+
+/* FINALLOptional: Adjust the title size */
+h1 {
+  font-size: 3.3rem;
+  color:  #ef838c;
+}
+
+h1 span {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* FINALL Subtitle styling */
+.subtitle {
+  font-size: 1rem;
+  color: #d5b688;
+  margin: 10px 0;
+}
+
+/* FINALL Interactive Line */
+.interactive-line {
+  margin-top: 50px;
+  font-size: 1.2rem;
+  color: #d5b688;
+  cursor: pointer;
+  display: inline-block;
+  border-bottom: 2px #ef838c;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.interactive-line:hover {
+  color: #ef838c;
+  border-color: #fcacbc;
+}
+
+
+
+
+
+/* Second Page Section */
+.second-page {
+  position: relative;
+  z-index: 1;
+  padding-top: 100vh; /* Ensure the second page starts after the first page */
+}
+
+
+
+
+
+/*  FINALLL General Layout */
+.motto-section {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  background-image: url("https://png.pngtree.com/png-vector/20240205/ourmid/pngtree-golden-queen-crown-png-image_11547084.png");
+  padding: 0px;
+  border-radius: 10px;
+  margin: 0px 0;
+  position: relative;
+}
+
+
+
+
+
+.motto-textt {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;  /* Slightly smaller font size for the paragraph */
+  color: 	#6f0202;
+  position: relative;
+  text-align: center;
+  top: 85%;
+  left:28%;
+
+}
+
+
+
+
+.motto-textt {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.motto-paragraph:hover {
+    color: #00bfff;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FINALLL General Styles */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif; /* Changed font to Times New Roman */
+    color: #000; /* Set all text color to black */
+    background-image: url('https://i.pinimg.com/736x/93/7c/b1/937cb16853233a8ff609d3ef0b2b2fcb.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    animation: fadeIn 2s ease-out; /* Fade-in effect for the entire page */
+}
+
+/*FINALLLL  Navigation Bar */
+nav {
+    background: rgba(239, 131, 140, 0.5);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 1s ease-out; /* Animation for sliding down the nav */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+/* General styles for the intro section */
+.intro {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Space between description and photo */
+}
+
+}
+
+/* Description styling */
+.descrip {
+    background-color: pink; /* Pink background */
+    width: 10%; /* Covers 10% of the container's width */
+    height: 200px; /* Matches the height of the profile picture */
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text horizontally */
+    padding: 10px; /* Optional: Add padding */
+    box-sizing: border-box; /* Include padding in the total width/height */
+}
+
+/* Optional: Style the text within the description */
+.descrip h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem;
+    color: #000; /* Text color */
+}
+
+.descrip p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Empty Section */
+.empty-section {
+  height: 50px; /* Adjust the height as needed */
+}
+
+
+
+
+
+
+
+/* Projects Section */
+#projects {
+  padding: 50px 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project {
+  background: rgba(221, 133, 172, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+  width: 300px;
+  bottom:40%;
+  transition: transform 0.3s ease, background-image 0.3s ease;
+}
+
+.proj-textt {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;  /* Slightly smaller font size for the paragraph */
+  color: 	#6f0202;
+  position: relative;
+    padding: 10px;
+  text-align: center;
+  top: 85%;
+
+}
+
+
+
+.project:hover {
+  transform: scale(1.05); /* Slightly enlarge the project card on hover */
+  background-color:#efd195b7; /* Change background color on hover */
+}
+.project .description {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.project .hover-description {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project:hover .description {
+  opacity: 0; /* Hide the initial description on hover */
+}
+
+.project:hover .hover-description {
+  opacity: 1; /* Show the hover description on hover */
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 22px;
+}
+
+.project .description, .project .hover-description {
+  font-size: 1rem;
+  margin: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+
+
+/* Tools Section */
+#tools {
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.tools-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tools-textt {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;  /* Slightly smaller font size for the paragraph */
+  color: 	#6f0202;
+  position: relative;
+    padding: 10px;
+  text-align: center;
+  top: 85%;
+
+}
+
+.tool img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease; /* Interactive hover effect */
+}
+
+.tool img:hover {
+    transform: rotate(20deg); /* Rotate the icons on hover */
+}
+
+
+
+
+
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.containerTwo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50; /* Full viewport height */
+  background-color: #f5f3e4;
+}
+
+/* Left Side (Photo) */
+.left {
+  flex: 1;
+  padding: 20px;
+}
+
+.photo {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Middle Line */
+.line {
+  width: 1px;
+  background-color: black;
+  height: 80%; /* Adjust to match the photo height */
+}
+
+/* Right Side (Text) */
+.right {
+  flex: 2;
+  padding: 20px;
+}
+
+.right h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #9e1c28;
+}
+
+.right p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #9e1c28;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Section Layout */
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh; /* Full viewport height */
+  background-color: #f5f3e4;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+
+
+/* Text Sections */
+.text-sections {
+  flex: 1;
+  color: #9e1c28;
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Individual Text Section */
+.text-section {
+  margin-bottom: 10px;
+}
+
+.text-section h2 {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  margin-bottom: 10px;
+}
+
+.text-section p {
+  font-size: 1.1rem;
+  font-family: 'Arial', sans-serif;
+  max-width: 80%;
+}
+
+/* Black Line Dividers Between Sections */
+.divider {
+  border-top: 2px solid black;
+  margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* About Section Layout */
+.about-section {   
+  background: rgba(239, 131, 140, 0.5);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90;
+  padding: 44px;
+  position: relative;
+}
+
+/* About Heading */
+.about-heading h1 {
+  font-size: 5rem;
+  color: #fbfbf0; /* Deep Cherry Red */
+  margin-bottom: 35px;
+  right: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Main Content Layout */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Left Section (Image) */
+.about-image {
+  width: 52%;
+  margin-right: 49px;
+}
+
+.about-image img {
+  width: 99%;
+  height: auto;
+  right: 40%;
+  border-radius: 32px;
+}
+
+/* Right Section (Text) */
+.about-text {
+  width: 50%;
+}
+
+.about-text h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1.6;
+  max-width: 80%;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.6;
+  max-width: 80%;
+  font-weight: normal;
+}
+
+/* Lower Right Paragraph */
+.lower-right-paragraph {
+  position: absolute;
+  bottom: 155px;
+  right: 59px;
+  font-size: 1rem;
+  color: #fbfbf0;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* General reset */
+
+
+/* Style for the text container */
+.text-container {
+    font-size: 3rem;
+    color: pink;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid pink;
+    width: 0;
+    background-color: white; /* Background color for the text container */
+    padding: 10px;
+    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite, repeatTyping 4s infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 22ch; /* Adjust to the length of the text */
+    }
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Reset the typing and repeat */
+@keyframes repeatTyping {
+    0%, 100% {
+        width: 0; /* Reset to 0 at the beginning and end of the animation */
+    }
+    50% {
+        width: 22ch; /* Make the text fully visible at the midpoint */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  color: #fff;
+}
+
+.get-in-touch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(239, 131, 140, 0.5);
+}
+
+.content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+}
+
+.content .icon {
+  font-size: 36px;
+  margin-left: 10px;
+}
+
+.content .email {
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;\
+  color: #fff;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.info {
+  text-align: right;
+}
+
+.info .description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.info .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info .link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.info .link:hover {
+  color: #fff;
+}
+
+
+
+/* Social Media Icons Styling */
+.social-media {
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
+.social-icon {
+margin: 0 15px;
+font-size: 1em; /* Icon size */
+color: #fff; /* Icon color */
+text-decoration: none; /* Remove underline */
+transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+color: #DB4437; /* Google icon color (Red) */
+transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+.social-icon i {
+display: inline-block;
+font-size: 2.5em; /* Adjust the icon size */
+}
+
+
+/* Basic reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
